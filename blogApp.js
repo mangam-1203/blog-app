@@ -231,43 +231,6 @@ app.get("/logout",function(req,res){
     req.logout();
     res.redirect("/login");
 });
-// //comments
-// app.get("/blogs/:id/newComment",isLoggedIn,function(req,res){
-//     Blog.findById(req.params.id,function(err,foundBlog){
-//         if(err)
-//         {
-//             console.log("err");
-//         }
-//         else{
-//             res.render("comment",{user:req.user,blogs:foundBlog});
-//         }
-//     })
-    
-// });
-// app.post("/blogs/:id/comment",function(req,res){
-//     Comment.create(req.body.comment,function(err,newComment){
-//         if(err)
-//         {
-//             console.log(err);
-//         }
-//         else
-//         {
-//             Blog.findById(req.params.id,function(err,foundBlog){
-//                 if(err)
-//                 {
-//                     console.log("err");
-//                 }
-//                 else
-//                 {
-//                     foundBlog.comment.push(newComment);
-//                     foundBlog.save();
-//                     res.redirect("/blogs/"+foundBlog._id);
-//                 }
-//             });
-//         }
-//     });
-// });
-
 //middleware
 function isLoggedIn(req,res,next){
     if(req.isAuthenticated()){
