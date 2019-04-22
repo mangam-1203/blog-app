@@ -1,0 +1,27 @@
+<% include partials/header.ejs%>
+
+        
+        <div class=" ui inverted main text container">
+            <div class=" ui inverted huge header">
+                Login
+            </div>
+            <form class="ui inverted form" action="/login" method="POST">
+                <div class="field">
+                    <span class="ui inverted  header">user id:</span>
+                    <span>
+                        <input class="opacity" type="text" placeholder="email/mobile number" name="username" required>
+                    </span>
+                </div>
+                <div class="field">
+                    <span class="ui inverted header">password:</span>
+                    <span>
+                        <input class="opacity" type="password" placeholder="password" name="password" required>
+                    </span>
+                </div>
+                <div class="field">
+                    <button class=" ui inverted basic button ">Login</button>
+                </div>
+            </form>
+            <span>If not a user <a href="/register">click here!!</a></span>
+        </div>
+        <% include partials/footer.ejs%>

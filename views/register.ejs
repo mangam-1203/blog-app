@@ -1,0 +1,26 @@
+<% include partials/header.ejs%>
+
+        
+        <div class=" ui inverted main text container">
+            <div class=" ui inverted huge header">
+                signup
+            </div>
+            <form class="ui inverted form" action="/register" method="POST">
+                <div class="field">
+                    <span class="ui inverted  header">user id:</span>
+                    <span>
+                        <input class="opacity" type="text" placeholder="email/mobile number" name="username" required>
+                    </span>
+                </div>
+                <div class="field">
+                    <span class="ui inverted header">password:</span>
+                    <span>
+                        <input class="opacity" type="password" placeholder="password" name="password" required>
+                    </span>
+                </div>
+                <div class="field">
+                    <button class=" ui inverted basic button ">signup</button>
+                </div>
+            </form>
+        </div>
+        <% include partials/footer.ejs%>

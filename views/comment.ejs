@@ -1,0 +1,9 @@
+<% include partials/header.ejs %>
+<form action="/blogs/<%=blogs._id%>/comment" method="POST">
+    <textarea name="comment[comment]">
+        enter your comment
+    </textarea>
+    <button>
+        submit
+    </button>
+</form>

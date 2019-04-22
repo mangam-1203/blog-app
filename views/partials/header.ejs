@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>
+            BLOG APP
+        </title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/stylesheet/App.css">
+    </head>
+    <body>
+        
+        <div class="ui container">
+        <div class="ui inverted  secondary menu">
+            <div class="ui container">
+                <div id="header" class="header item">
+                    <img class="inverted" src="/image/jatin2.png" id="icon">Blog Site
+                </div>
+                    <a href="/" class="item">Home</a>
+                   
+                    <%if(User){%>
+                        <a class="ui item " href="/user/<%=User.username%>/blogs/new">
+                            New Post
+                        </a>
+                    <%}%>                    
+                    <div class="right menu">
+                        <%if(!User){%>
+                                <div class="item">
+                          
+                                    <a class="ui item active" href="/login">
+                                        Login
+                                    </a>
+                                  </div>
+                                  <div class="item">
+                                        <a class="ui item active" href="/register">
+                                            Sign Up
+                                        </a>
+                                  </div>
+                        <%} else{%>
+                            <div class="item" >
+                                    <a class="ui item " href=""><%=User.username%></a>>
+                                        
+                                    </a>
+                                    <a class="ui item active" href="/logout">
+                                        Logout
+                                    </a>
+                            </div>
+
+                        <%}%>
+                        
+                          
+                    </div>
+                    
+                    
+                    
+                </div>
+                   
+            </div>
+            <div class="form" id="flash">
+                <% if(error&&error.length>0){%>
+                    <div  class="alert small alert-danger">
+                            <h1><%=error%></h1>
+                    </div>
+                <%}%>
+                <% if(success&&success.length>0){%>
+                    <div  class="alert alert-success">
+                            <h1><%=success%></h1>
+                    </div>
+                <%}%>
+                <% if(register&&register.length>0){%>
+                    <div  class="alert alert-success">
+                            <h1><%=register%></h1>
+                    </div>
+                <%}%>
+                <% if(login&&login.length>0){%>
+                    <div  class="alert alert-success">
+                            <h1><%=login%></h1>
+                    </div>
+                <%}%>
+        </div>
+    </div>
+            
+        

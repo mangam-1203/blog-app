@@ -1,0 +1,25 @@
+<% include partials/header.ejs %>
+<div class="ui main inverted text container">
+    <div class="ui inverted huge header">
+        New Blog
+    </div>
+    <form class="ui inverted form" action="/user/<%=user.username%>/blogs/new" method="post">
+        <div class="ui inverted  field">
+            <label class="invertedText">TITLE</label>
+            <input class="opacity" type="text" name="blog[title]" placeholder="title">
+        </div>
+        <div class="ui inverted field">
+            <label>IMAGE</label>
+            <input class="invertedText opacity" type="text" name="blog[image]" placeholder="image url">
+        </div>
+        <div class=" ui inverted field">
+            <label > CONTENT </label>
+           <textarea class="opacity invertedText" name="blog[body]"></textarea>
+        </div>
+        <div class="ui  field">
+            
+            <button class="ui inverted big basic button">CREATE POST</button>
+        </div>
+    </form>
+</div>
+<% include partials/footer.ejs %>

@@ -1,0 +1,101 @@
+i.icon{
+    font-size:2em;
+}
+.container.main{
+    margin-top:5.0em;
+    margin-bottom:7.0em;
+}
+.invertedText{
+    
+    color:white;
+}
+#DELETE{
+    display:inline;
+}
+#header{
+    font-size:2em;
+}
+.content{
+    color:white;
+}
+#id{
+    color:white;
+}
+.opacity{
+    opacity:0.4;
+    
+}
+.alert{
+    opacity:0.5;
+    text-align: center;
+    transition-duration: 1s;
+}
+#imagepadding{
+    margin:5px;
+}
+#container{
+    text-align: center;
+    width:50%;
+}
+/*#image{*/
+/*    background-image: url("https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/56490442_2340238259551202_5433532941139443712_o.jpg?_nc_cat=105&efg=eyJpIjoidCJ9&_nc_ht=scontent.fdel11-1.fna&oh=f298c4f53b3b0c0959ca88d0a40d5777&oe=5D4D24A7");*/
+/*}     */
+body{
+    
+    background-image: url("/image/jatin.jpg");
+    background-size:     50%;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    color:white;
+    background-color: black;
+    
+}
+.centered.rounded{
+    height:50%;
+    width :100%
+}
+#flash{
+    text-align: center;
+    
+}
+
+@media(min-width:320px) and (max-width:480px){
+    i.icon{
+        font-size:2em;
+    }
+    .container.main{
+        margin-top:5.0em;
+        margin-bottom:7.0em;
+    }
+    .invertedText{
+        opacity: 0%
+    }
+    #DELETE{
+        display:inline;
+    }
+    #header{
+        font-size:2em;
+    }
+    .content{
+        color:white;
+    }
+    #id{
+        color:white;
+    }
+    /*#image{*/
+    /*    background-image: url("https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/56490442_2340238259551202_5433532941139443712_o.jpg?_nc_cat=105&efg=eyJpIjoidCJ9&_nc_ht=scontent.fdel11-1.fna&oh=f298c4f53b3b0c0959ca88d0a40d5777&oe=5D4D24A7");*/
+    /*}     */
+    body{
+        
+        background-image: url("https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/56490442_2340238259551202_5433532941139443712_o.jpg?_nc_cat=105&efg=eyJpIjoidCJ9&_nc_ht=scontent.fdel11-1.fna&oh=f298c4f53b3b0c0959ca88d0a40d5777&oe=5D4D24A7");
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center;
+        color:white;
+    }
+    .centered.rounded{
+        height:50%;
+        width :100%
+    }
+    
+}
